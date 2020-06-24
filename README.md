@@ -4,6 +4,7 @@ Allows you to define env variables needed for build/deploy in order to harmonize
 
 - CI_COMMIT_BRANCH
 - CI_COMMIT_REF_NAME
+- CI_COMMIT_REF_SLUG
 - CI_COMMIT_SHA
 - CI_COMMIT_TAG
 
