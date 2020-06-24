@@ -13,13 +13,9 @@ See : https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
 ## Example usage
 
 ```yaml
-    - uses: actions/checkout@v2
-    with:
-        repository: allocine/action-git-metadata
-        path: ./actions
-    - name: Hello world action step
-    uses: ./actions
-    env:
+    - name: Git metadata
+      uses: allocine/action-git-metadata@master
+      env:
         GITHUB_COMMIT_PR_SHA: ${{ github.event.pull_request.head.sha }}
 
 ```
