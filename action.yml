@@ -1,0 +1,5 @@
+name: "Git metadata"
+description: "Defines the env variables required for build/deploy."
+runs:
+  using: "docker"
+  image: "Dockerfile"
