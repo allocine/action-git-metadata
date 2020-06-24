@@ -14,12 +14,12 @@ See : https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
 
 ```yaml
     - uses: actions/checkout@v2
-    with:
+      with:
         repository: allocine/action-git-metadata
-        path: ./actions
+        path: ./.github/action-git-metadata
     - name: Hello world action step
-    uses: ./actions
-    env:
+      uses: ./.github/action-git-metadata
+      env:
         GITHUB_COMMIT_PR_SHA: ${{ github.event.pull_request.head.sha }}
 
 ```
