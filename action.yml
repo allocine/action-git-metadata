@@ -1,4 +1,4 @@
-name: "Git metadata"
+name: "Git metadata for CI"
 description: "Defines the env variables required for build/deploy."
 runs:
   using: "docker"
