@@ -3,3 +3,6 @@ description: "Defines the env variables required for build/deploy."
 runs:
   using: "docker"
   image: "Dockerfile"
+branding:
+  icon: 'git-branch'  
+  color: 'yellow'
